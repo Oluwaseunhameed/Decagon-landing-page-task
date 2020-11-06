@@ -6,10 +6,41 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="/modal.css">
   <script src="/scripts.js"></script>
 </head>
 
 <body>
+  <!-- Form modal -->
+  <div id="id01" class="modal">
+    <span onclick="document.getElementById('id01').style.display='none'" class="close"
+      title="Close Modal">&times;</span>
+    <form class="modal-content">
+      <div class="container">
+        <h1>Become a Mentor</h1>
+        <p style="margin-bottom: 20px">Please fill in this form to create an account.</p>
+
+        <label for="firstName"><b>First Name</b></label>
+        <input type="text" placeholder="First Name" name="firstName" id="firstName" required>
+
+        <hr>
+        <label for="email"><b>Email</b></label>
+        <input type="text" placeholder="Enter Email" name="email" id="email" required>
+
+        <hr>
+        <label for="phone"><b>Phone Number</b></label>
+        <input type="text" placeholder="Phone Number" name="phone" id="phone" required>
+
+        <div class="clearfix btn-group">
+          <button type="button" onclick="document.getElementById('id01').style.display='none'"
+            class="cancelbtn">Cancel</button>
+          <button type="submit" class="signupbtn" id="signupbtn">Send</button>
+        </div>
+      </div>
+    </form>
+  </div>
+
+  <!-- END OF FORM MODAL -->
   <section class="section-one">
     <div class="container">
       <header>
@@ -21,7 +52,8 @@
             <li><a href="#">How it works</a></li>
             <li><a href="#">Our Mentors</a></li>
             <li><a href="#">Sign In</a></li>
-            <li><button class="button-primary">Become a mentor</button></li>
+            <li><button class="button-primary" onclick="document.getElementById('id01').style.display='block'">Become a
+                mentor</button></li>
           </ul>
         </div>
       </header>
@@ -77,7 +109,7 @@
             <h4>Students</h4>
             <p>Bobby the EXPLORER who wants to learn a new skill for quick and easy career direction.</p>
           </div>
-          
+
         </div>
         <div class="card-wrapper-big">
           <img class="img-res-big" src="/images/profile-img2.png" alt="profile">
@@ -85,7 +117,7 @@
             <h4>College Grads</h4>
             <p>Ella the GO-GETTER who wants to ace her next interview, so she can finally land her dream job.</p>
           </div>
-        
+
         </div>
 
         <div class="card-wrapper">
@@ -123,7 +155,7 @@
         <div class="card-container">
           <img src="/images/icon3.png" alt="Icon3">
           <h4>Group Mentorship Plan</h4>
-          <p>This package will help your group, organization, team or friends get mentored at the same time. (Bonus 
+          <p>This package will help your group, organization, team or friends get mentored at the same time. (Bonus
             gift: discounted rate). Browse Mentors & Make Reservation for as low 9999 per session.</p>
           <h5>Find Mentors <span><img src="/images/arrow-front.png" alt="Arrow"></span></h5>
         </div>
@@ -132,14 +164,15 @@
         <div class="card-container">
           <img src="/images/icon2.png" alt="Icon2">
           <h4>Interview Coaching Plan</h4>
-          <p>If you are looking at landing that dream job. (Bonus gift:  CV/Job description review + possible interview 
+          <p>If you are looking at landing that dream job. (Bonus gift: CV/Job description review + possible interview
             questions and answers). Browse & Book Mentors for as low as N5999-7999 per session.</p>
           <h5>Find Mentors <span><img src="/images/arrow-front.png" alt="Arrow"></span></h5>
         </div>
         <div class="card-container">
           <img src="/images/icon4.png" alt="Icon4">
           <h4>Consultation Plan </h4>
-          <p>If you need one on one assistance in gaining clarity, meeting that project deadline, scaling through that task. (Bonus 
+          <p>If you need one on one assistance in gaining clarity, meeting that project deadline, scaling through that
+            task. (Bonus
             gift: Strategy). Browse & Book Mentors for as low as N9999-19999 per session.</p>
           <h5>Find Mentors <span><img src="/images/arrow-front.png" alt="Arrow"></span></h5>
         </div>
@@ -155,8 +188,10 @@
     <div class="container">
       <div class="heading">
         <h3>Let's take you on an unforgettable mentorship trip</h3>
-        <p>Stuck in that project, landing that dream job, learning that new skills or launching that business? Not to worry, 
-          we are here to point you in the right direction, right on time and right on budget. Start a trip right now!</p>
+        <p>Stuck in that project, landing that dream job, learning that new skills or launching that business? Not to
+          worry,
+          we are here to point you in the right direction, right on time and right on budget. Start a trip right now!
+        </p>
       </div>
       <div class="items-wrapper">
         <div class="item-one">
@@ -179,7 +214,7 @@
             <h3>Select Service Package</h3>
             <p>After you have selected a mentor that fits your criteria, select the services they offer</p>
             <img src="/images/img2.png" alt="person seating">
-            
+
           </div>
         </div>
       </div>
@@ -205,7 +240,7 @@
             <h3>Make Payment</h3>
             <p>Make payment for the mentor and the services you have selected</p>
             <img src="/images/img4.png" alt="person seating">
-            
+
           </div>
         </div>
       </div>
@@ -220,13 +255,154 @@
     <div class="container">
       <div class="heading">
         <h3>Subscribe to your best fit from our growing list of industry experts at low monthly prices.</h3>
-        <p>Our mentor subscriptions are built with you in mind which is why it comes at affordable prices. You can book our mentors on per session
-           basis and once convinced, upgrade to a low-cost monthly payment. We monitor your mentorship progress to ensure you get value on investment.</p>
+        <p>Our mentor subscriptions are built with you in mind which is why it comes at affordable prices. You can book
+          our mentors on per session
+          basis and once convinced, upgrade to a low-cost monthly payment. We monitor your mentorship progress to ensure
+          you get value on investment.</p>
       </div>
+      <div class="buttons">
+        <button class="active">All Industry</button>
+        <button class="butt">Technology/Design</button>
+        <button class="butt">Business</button>
+        <button class="butt">Digital Media and Marketing</button>
+      </div>
+      <div class="pix-wrapper">
+        <div class="pix">
+          <img src="images/pix1.png" alt="Profile Picture">
+          <h5>Kingsley Peter</h5>
+          <p>Product Designer</p>
+        </div>
+        <div class="pix">
+          <img src="images/pix1.png" alt="Profile Picture">
+          <h5>Kingsley Peter</h5>
+          <p>Product Designer</p>
+        </div>
+        <div class="pix">
+          <img src="images/pix1.png" alt="Profile Picture">
+          <h5>Kingsley Peter</h5>
+          <p>Product Designer</p>
+        </div>
+        <div class="pix">
+          <img src="images/pix1.png" alt="Profile Picture">
+          <h5>Kingsley Peter</h5>
+          <p>Product Designer</p>
+        </div>
+        <div class="pix">
+          <img src="images/pix1.png" alt="Profile Picture">
+          <h5>Kingsley Peter</h5>
+          <p>Product Designer</p>
+        </div>
+        <div class="pix">
+          <img src="images/pix1.png" alt="Profile Picture">
+          <h5>Kingsley Peter</h5>
+          <p>Product Designer</p>
+        </div>
+        <div class="pix">
+          <img src="images/pix1.png" alt="Profile Picture">
+          <h5>Kingsley Peter</h5>
+          <p>Product Designer</p>
+        </div>
+        <div class="pix">
+          <img src="images/pix1.png" alt="Profile Picture">
+          <h5>Kingsley Peter</h5>
+          <p>Product Designer</p>
+        </div>
+      </div>
+      <div class="heading"><button class="button-primary button-bottom">View Mentors</button></div>
+
     </div>
   </section>
 
   <!-- END OF SECTION FIVE -->
+
+  <!-- SECTION SIX -->
+  <section class="section-six">
+    <div class="heading">
+      <h3>Here's what our mentees at MentorHQ have to say about us</h3>
+    </div>
+    <div class="content">
+      <div class="card">
+        <p>"Diana is the type of mentor you want to keep for a long time
+          if you are looking for someone to guide you through the coding world. She immediately identified my goals and
+          helped me find a learning path."</p>
+        <h5>Peter Andrew, Design Mentee</h5>
+      </div>
+      <div class="card">
+        <p>"Diana is the type of mentor you want to keep for a long time
+          if you are looking for someone to guide you through the coding world. She immediately identified my goals and
+          helped me find a learning path."</p>
+        <h5>Peter Andrew, Design Mentee</h5>
+      </div>
+      <div class="card">
+        <p>"Diana is the type of mentor you want to keep for a long time
+          if you are looking for someone to guide you through the coding world. She immediately identified my goals and
+          helped me find a learning path."</p>
+        <h5>Peter Andrew, Design Mentee</h5>
+      </div>
+      <div class="card">
+        <p>"Diana is the type of mentor you want to keep for a long time
+          if you are looking for someone to guide you through the coding world. She immediately identified my goals and
+          helped me find a learning path."</p>
+        <h5>Peter Andrew, Design Mentee</h5>
+      </div>
+      <div class="card">
+        <p>"Diana is the type of mentor you want to keep for a long time
+          if you are looking for someone to guide you through the coding world. She immediately identified my goals and
+          helped me find a learning path."</p>
+        <h5>Peter Andrew, Design Mentee</h5>
+      </div>
+    </div>
+  </section>
+
+  <!-- END OF SECTION SIX -->
+
+  <!-- SECTION SEVEN -->
+
+  <section class="section-seven">
+    <div class="content">
+      <h5>Over 1,000 people are already enjoying the benefit of being connected to a personal mentor. It's about time
+        you did too.</h5>
+      <div class="button-wrapper">
+        <button class="button-primary space1">Find a mentor</button>
+        <button class="button-primary space">Become a mentor</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- END OF SECTION SEVEN -->
+
+  <!-- SECTION EIGHT -->
+
+  <footer class="section-eight">
+    <div class="wrapper">
+      <div class="column1">
+        <img class="footer-img" src="/images/logo.png" alt="Footer logo">
+        <p>Join hundreds of people for a trusted, convenient and unforgettable mentorship experience.</p>
+        <p><strong>Disclaimer:</strong> Clients are strongly advised to book and make payments to mentors only on the
+          platform.
+          MentorHQ will not be liable for any payment or arrangement made outside the platform.</p>
+      </div>
+      <div class="column2">
+        <h5>The Company</h5>
+        <a href="#">About Us</a>
+        <a href="#">FAQ</a>
+      </div>
+      <div class="column3">
+        <h5>Follow</h5>
+        <a href="#"><img src="/images/post-facebook.png" alt="facebook"></a>
+        <a href="#"><img src="/images/post-twitter.png" alt="facebook"></a>
+        <a href="#"><img src="/images/post-instagram.png" alt="facebook"></a>
+        <a href="#"><img src="/images/post-linkedin.png" alt="facebook"></a>
+        <p>+234 70 69234756</p>
+        <p>youremail@domain.com</p>
+      </div>
+      <hr />
+      <p class="paragraph">2020 copyright. All Rights reserved</p>
+    </div>
+    <!-- <div class="footer-bottom">
+      <p class="paragraph">2020 copyright. All Rights reserved</p>
+    </div> -->
+  </footer>
 </body>
 
 </html>

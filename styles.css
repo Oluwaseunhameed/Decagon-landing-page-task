@@ -18,7 +18,7 @@ body {
 .container {
   width: 85%;
   margin: 0 auto;
-  position: relative;
+  /* position: relative; */
 }
 
 .button-primary {
@@ -39,6 +39,7 @@ body {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: left bottom;
+  position: relative;
 }
 
 header {
@@ -149,13 +150,14 @@ header {
   height: 470px;
 }
 .banner {
-  width: 100%;
   height: 100px;
   background-color: #fff;
   box-shadow: 0px 10px 15px rgba(2, 35, 100, 0.07);
   border-radius: 10px;
   position: absolute;
-  bottom: -180px;
+  bottom: -50px;
+  left: 7.5%;
+  right: 7.5%;
   display: flex;
   flex-flow: row wrap;
   align-items: center;
@@ -506,11 +508,40 @@ header {
 }
 
 .section-five .heading {
-  max-width: 600px;
+  max-width: 550px;
   margin: 1rem auto;
   text-align: center;
 }
 
+.section-five .buttons, .section-five .pix-wrapper {
+  width: 100%;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.section-five .buttons .active{
+  width: 23%;
+  padding: 0.7rem 3rem;
+  background: #0D2896;
+  border-radius: 3px;
+  color: #FFFFFF;
+  cursor: pointer;
+  outline: none;
+}
+
+.section-five .buttons .butt{
+  width: 23%;
+  padding: 0.7rem 3rem;
+  background: #F6F9FF;
+  color: #333333;
+  cursor: pointer;
+  outline: none;
+  border: 1px solid #D8E4FB;
+  box-sizing: border-box;
+  border-radius: 3px;
+}
 .section-five .heading h3 {
   font-size: 1.5rem;
   line-height: 1.9rem;
@@ -525,3 +556,219 @@ header {
   margin: 2rem 0;
 }
 
+.section-five .pix {
+  width: 23%;
+  height: 200px;
+  margin-bottom: 2rem;
+  border-radius: 5px;
+  position: relative;
+}
+
+.section-five .pix img {
+  width: 100%;
+  height: 100%;
+}
+
+.section-five .pix h5 {
+  color: #ffffff;
+  position: absolute;
+  bottom: 40px;
+  left: 20px;
+}
+
+.section-five .pix p {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  font-size: 0.8rem;
+  color: #FFFFFF;
+}
+
+.button-bottom {
+  padding: 1rem 4rem;
+}
+
+/* ======================= END OF SECTION FIVE ===================== */
+
+/* ======================= SECTION SIX ============================= */
+
+.section-six {
+  width: 100%;
+  padding: 3rem 0;
+  background: #faf8f8;
+}
+
+.section-six .heading {
+  max-width: 500px;
+  margin: 1rem auto;
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+.section-six .content {
+  width: 100%;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  padding-left: 5rem;
+  display: flex;
+  height: 300px;
+
+}
+
+.section-six .content .card {
+  min-width: 340px;
+  width: 340px;
+  margin: 1rem;
+  height: auto;
+  background: #FFFFFF;
+  box-shadow: 0px 14.6618px 14.6618px rgba(50, 50, 71, 0.04);
+  border-radius: 3px;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.section-six .content .card p {
+  color: #504F4F;
+  font-size: 1rem;
+  line-height: 1.3rem;
+  margin-bottom: 2rem;
+}
+
+/* ==================== END OF SECTION SIX ================================= */
+
+/* ====================== SECTION SEVEN ========================================= */
+
+.section-seven {
+  background: #F6F9FF;
+  width: 100%;
+  padding: 3rem;
+
+}
+
+.section-seven .content {
+  width: 85%;
+  margin: 2rem auto;
+  height: 250px;
+  background-image: url('/images/temple.png');
+  background-repeat: repeat;
+  background-color: #0D2896;
+  border-radius: 5px;
+  padding: 3rem;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
+
+.section-seven .content h5 {
+  font-size: 1.5rem;
+  line-height: 1.2rem;
+  color: #FFFFFF;
+  text-align: center;
+  line-height: 2rem;
+  margin-bottom: 2rem;
+}
+
+.section-seven .content .button-wrapper .space {
+  margin-left: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  box-sizing: border-box;
+  border-radius: 3px;
+  outline: none;
+}
+
+.section-seven .content .button-wrapper .space1 {
+  background: #FFFFFF;
+  border-radius: 3px;
+  color: #0D2896;
+  outline: none;
+}
+
+/* =========================== END OF SECTION SEVEN ======================== */
+
+/* ========================= SECTION EIGHT =============================== */
+
+.section-eight {
+  width: 100%;
+  background: #0A1F73;
+  height: 300px;
+}
+
+.section-eight .wrapper {
+  width: 90%;
+  display: flex;
+  flex-flow: row wrap;
+  margin: 2rem auto 0 auto;
+  justify-content: space-between;
+  padding: 3rem;
+  padding-bottom: 0;
+}
+
+.section-eight .wrapper .column1 {
+  width: 50%;
+  padding-right: 4rem;
+  display: flex;
+  flex-flow: column wrap;
+  color: #E7F3FF;
+}
+
+.section-eight .wrapper .column1 p{
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+  line-height: 1.4rem;
+}
+
+.section-eight .wrapper .column1 .footer-img {
+  width: 130px;
+  height: 40px;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+.section-eight .wrapper .column2 {
+  width: 25%;
+  color: #FFFFFF;
+}
+.section-eight .wrapper .column2 h5 {
+  margin-bottom: 1rem;
+}
+
+.section-eight .wrapper .column2 a {
+  color: #E7F3FF;
+  font-size: 0.9rem;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 0.8rem;
+} 
+
+.section-eight .wrapper .column3 {
+  width: 25%;
+  color: #FFFFFF;
+}
+
+.section-eight .wrapper .column3 h5 {
+  margin-bottom: 1rem;
+}
+
+.section-eight .wrapper .column3 a {
+  text-decoration: none;
+  display: inline-block;
+  padding-right: 2rem;
+  margin-bottom: 2rem;
+}
+
+.section-eight .wrapper .column3 p {
+  color: #E7F3FF;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+  line-height: 1.4rem;
+}
+
+.section-eight .wrapper hr {
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  width: 100%;
+}
+
+.section-eight .wrapper .paragraph {
+  text-align: center;
+  color: #fff;
+  width: 100%;
+}
